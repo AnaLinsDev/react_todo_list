@@ -5,14 +5,18 @@ function TodoForm(props) {
 
   const inputRef = useRef(null);
 
+  // Hook similar to componentDidMount and componentDidUpdate
   useEffect(() => {
+    // will focus the form
     inputRef.current.focus();
   });
 
+  // Will change variable input
   const handleChange = e => {
     setInput(e.target.value);
   };
 
+  // Will submit to parent the obect with id and text
   const handleSubmit = e => {
     e.preventDefault();
 

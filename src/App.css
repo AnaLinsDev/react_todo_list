@@ -89,6 +89,10 @@ h1 {
   position: relative;
 }
 
+.todo-text:hover {
+  cursor: pointer;
+}
+
 .todo-row {
   display: flex;
   justify-content: space-between;
